@@ -15,6 +15,7 @@
 		66CFBF371CCD9C9F00584043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CFBF351CCD9C9F00584043 /* LaunchScreen.storyboard */; };
 		66CFBF421CCD9C9F00584043 /* HappyBuyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CFBF411CCD9C9F00584043 /* HappyBuyTests.m */; };
 		66CFBF4D1CCD9C9F00584043 /* HappyBuyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CFBF4C1CCD9C9F00584043 /* HappyBuyUITests.m */; };
+		E30F60B1149E414E2C8E0EA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E91A1412572CB1FE5757B7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66CACAB9CAD998398E2DC278 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		66CFBF241CCD9C9F00584043 /* HappyBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CFBF281CCD9C9F00584043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66CFBF2A1CCD9C9F00584043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		66CFBF481CCD9C9F00584043 /* HappyBuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CFBF4C1CCD9C9F00584043 /* HappyBuyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyBuyUITests.m; sourceTree = "<group>"; };
 		66CFBF4E1CCD9C9F00584043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB3E52C44887E0CB3866852E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E91A1412572CB1FE5757B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30F60B1149E414E2C8E0EA9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +83,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		669958AC1CCDA60E0068A8F8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				669958AD1CCDA60E0068A8F8 /* Application */,
+				669958AE1CCDA60E0068A8F8 /* BaseClass */,
+				669958AF1CCDA60E0068A8F8 /* CodeClass */,
+				669958B01CCDA60E0068A8F8 /* DataBase */,
+				669958B11CCDA60E0068A8F8 /* Framework */,
+				669958B21CCDA60E0068A8F8 /* Helper */,
+				669958B31CCDA60E0068A8F8 /* Macro */,
+				669958B41CCDA60E0068A8F8 /* Resources */,
+				669958B71CCDA60E0068A8F8 /* Thethird */,
+			);
+			name = Source;
+			path = HappyBuy/Source;
+			sourceTree = "<group>";
+		};
+		669958AD1CCDA60E0068A8F8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		669958AE1CCDA60E0068A8F8 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		669958AF1CCDA60E0068A8F8 /* CodeClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CodeClass;
+			sourceTree = "<group>";
+		};
+		669958B01CCDA60E0068A8F8 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		669958B11CCDA60E0068A8F8 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		669958B21CCDA60E0068A8F8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		669958B31CCDA60E0068A8F8 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		669958B41CCDA60E0068A8F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				669958B51CCDA60E0068A8F8 /* File */,
+				669958B61CCDA60E0068A8F8 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		669958B51CCDA60E0068A8F8 /* File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		669958B61CCDA60E0068A8F8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		669958B71CCDA60E0068A8F8 /* Thethird */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thethird;
+			sourceTree = "<group>";
+		};
 		66CFBF1B1CCD9C9E00584043 = {
 			isa = PBXGroup;
 			children = (
 				66CFBF261CCD9C9F00584043 /* HappyBuy */,
+				669958AC1CCDA60E0068A8F8 /* Source */,
 				66CFBF401CCD9C9F00584043 /* HappyBuyTests */,
 				66CFBF4B1CCD9C9F00584043 /* HappyBuyUITests */,
 				66CFBF251CCD9C9F00584043 /* Products */,
+				A49A1E2497AD40AC9471D1E6 /* Pods */,
+				97E11D4C976AE3C3F6DD595A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +244,23 @@
 			path = HappyBuyUITests;
 			sourceTree = "<group>";
 		};
+		97E11D4C976AE3C3F6DD595A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1E91A1412572CB1FE5757B7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A49A1E2497AD40AC9471D1E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB3E52C44887E0CB3866852E /* Pods.debug.xcconfig */,
+				66CACAB9CAD998398E2DC278 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66CFBF511CCD9C9F00584043 /* Build configuration list for PBXNativeTarget "HappyBuy" */;
 			buildPhases = (
+				482D3230546D36B8BBF1A47C /* Check Pods Manifest.lock */,
 				66CFBF201CCD9C9F00584043 /* Sources */,
 				66CFBF211CCD9C9F00584043 /* Frameworks */,
 				66CFBF221CCD9C9F00584043 /* Resources */,
+				8314DF1F5295653FC3338CAF /* Embed Pods Frameworks */,
+				08072DB41596EF03E61AD405 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +388,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08072DB41596EF03E61AD405 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		482D3230546D36B8BBF1A47C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8314DF1F5295653FC3338CAF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66CFBF201CCD9C9F00584043 /* Sources */ = {
@@ -409,6 +581,7 @@
 		};
 		66CFBF521CCD9C9F00584043 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3E52C44887E0CB3866852E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HappyBuy/Info.plist;
@@ -420,6 +593,7 @@
 		};
 		66CFBF531CCD9C9F00584043 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66CACAB9CAD998398E2DC278 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HappyBuy/Info.plist;
@@ -496,6 +670,7 @@
 				66CFBF531CCD9C9F00584043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66CFBF541CCD9C9F00584043 /* Build configuration list for PBXNativeTarget "HappyBuyTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +679,7 @@
 				66CFBF561CCD9C9F00584043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66CFBF571CCD9C9F00584043 /* Build configuration list for PBXNativeTarget "HappyBuyUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +688,7 @@
 				66CFBF591CCD9C9F00584043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
