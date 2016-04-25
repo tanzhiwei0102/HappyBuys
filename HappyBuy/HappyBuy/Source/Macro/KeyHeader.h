@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  KeyHeader.h
 //  HappyBuy
 //
 //  Created by TanZhiWei on 16/4/25.
 //  Copyright © 2016年 TanZhiWei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#ifndef KeyHeader_h
+#define KeyHeader_h
 
-@interface ViewController : UIViewController
 
-
-@end
-
+#endif /* KeyHeader_h */

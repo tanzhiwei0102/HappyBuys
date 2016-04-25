@@ -16,8 +16,61 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    MainViewController *rootVC = [[MainViewController alloc]init];
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+    
+    // 设置引导页
+    NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+    // 引导页设置
+    if ([ud valueForKey:@"bool"]== nil) {
+        [ud setValue:@"yes" forKey:@"bool"];
+        [self showIntroWithCrossDissolve];
+    }
+
+    
+    
     return YES;
+}
+// 引导页设置
+-(void)showIntroWithCrossDissolve
+{
+    EAIntroPage *page1 = [EAIntroPage page];
+    //    page1.titleFont = [UIFont fontWithName:@"MarkerFelt" size:24];
+    page1.title = @"只要新的！";
+    page1.desc = @"品质都一样，团购更省钱!团实惠，购惊喜，尽在欢乐购。做你生活的知己，送您炫彩生活";
+    page1.bgImage = [UIImage imageNamed:@"bg1"];
+    page1.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title1"]];
+    
+    EAIntroPage *page2 = [EAIntroPage page];
+    page2.title = @"不占便宜！";
+    page2.desc = @"品质都一样，团购更省钱!团实惠，购惊喜，尽在欢乐购。做你生活的知己，送您炫彩生活";
+    page2.bgImage = [UIImage imageNamed:@"bg2"];
+    page2.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title2"]];
+    
+    EAIntroPage *page3 = [EAIntroPage page];
+    page3.title = @"大家齐心！";
+    page3.desc = @"品质都一样，团购更省钱!团实惠，购惊喜，尽在欢乐购。做你生活的知己，送您炫彩生活";
+    page3.bgImage = [UIImage imageNamed:@"bg3"];
+    page3.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title3"]];
+    
+    EAIntroPage * page4 = [EAIntroPage page];
+    page4.title = @"来买好的！";
+    page4.desc = @"品质都一样，团购更省钱!团实惠，购惊喜，尽在欢乐购。做你生活的知己，送您炫彩生活";
+    page4.bgImage = [UIImage imageNamed:@"bg4"];
+    page4.titleIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title4"]];
+    
+    
+    
+    
+    
+    EAIntroView *intro = [[EAIntroView alloc] initWithFrame:self.window.rootViewController.view.bounds andPages:@[page1,page2,page3,page4]];
+    
+    [intro setDelegate:self];
+    
+    [intro showInView:self.window.rootViewController.view animateDuration:0.0];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

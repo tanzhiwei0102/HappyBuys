@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  HappyBuy
+//
+//  Created by TanZhiWei on 16/4/25.
+//  Copyright © 2016年 TanZhiWei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "APPHeader.h"
+#import "IMPHeader.h"
+#import "KeyHeader.h"
+#import "URLHeader.h"
+
+#endif /* PrefixHeader_pch */
